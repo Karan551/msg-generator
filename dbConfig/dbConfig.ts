@@ -10,7 +10,7 @@ export default async function dbConnect(): Promise<void> {
 
     // ✅ Prevent multiple connections in serverless
     if (connection.isConnected === 1 || connection.isConnected === 2) {
-        console.log("Already connected or connecting to MONGDB.");
+        console.log("Already connected or connecting to MONGODB.");
         return;
     }
 
